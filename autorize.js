@@ -1,4 +1,4 @@
-function butclick(button) {
+function butclick() {
 
     console.log("Вы вошли");
 
