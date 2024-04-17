@@ -1,11 +1,16 @@
 function butclick() {
-    let username = "admin";
-    let userpass = "12345";
-        if (username && userpass ) {
-          alert("Вы вошли");
+    //используем document.getElementById()
+    //для получения элемента поля ввода с идентификатором "username"
+    let username = document.getElementById("username"); 
+    let userpass = document.getElementById("password");
+    //Получаем значения из полей ввода
+    let entUsername = username.value;
+    let entUserpass = userpass.value;
+    //делаем проверку совпадают ли данные
+if ( entUsername === "admin" && entUserpass === "12345" ) {
+  console.log("Вы вошли в систему.");
+} else {
+  console.log("Неправильные данные. Пожалуйста, попробуйте еще раз.");
     }
-        else 
-    {
-          console.log("Неправильные данные. Пожалуйста, попробуйте ещё раз.");
-    }
-    } 
+
+} 
