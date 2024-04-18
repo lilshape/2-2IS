@@ -7,7 +7,7 @@
 </head>
 <body>
     <script src="autorize.js"></script>
-    <form id="login-form">
+    <div id="login-form">
         <label for="username">Имя пользователя:</label>
         <input type="text" id="username" name="username" required>
       
@@ -16,7 +16,11 @@
       
         <button type="submit" onclick="butclick()">Войти
         </button>
+    </div>
+        <div id="user-panel" style="display: none;">
+            <h1>Добро пожаловать, <span id="user-name"></span></h1>
+            <button type="button" onclick="logout()">Выйти</button>
+        </div>          
 
-      </form>
 </body>
 </html>
