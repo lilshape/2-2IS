@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сайт</title>
-</head>
-<body>
+  </head>
+  <body>
     <script src="autorize.js"></script>
     <div id="login-form">
-        <label for="username">Имя пользователя:</label>
-        <input type="text" id="username" name="username" required>
-      
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password" required>
-      
-        <button type="submit" onclick="butclick()">Войти
-        </button>
-    </div>
-        <div id="user-panel" style="display: none;">
-            <h1>Добро пожаловать, <span id="user-name"></span></h1>
-            <button type="button" onclick="logout()">Выйти</button>
-        </div>          
+      <label for="username">Имя пользователя:</label>
+      <input type="text" id="username" name="username" required />
 
-</body>
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit" onclick="butclick()">Войти</button>
+    </div>
+    <div id="user-panel" style="display: none">
+      <h1>Добро пожаловать, <span id="user-name"></span></h1>
+      <button type="button" onclick="logout()">Выйти</button>
+    </div>
+    <div id="user-name"></div>
+  </body>
 </html>
