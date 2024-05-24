@@ -50,3 +50,12 @@ function butclick() {
     document.getElementById("login-form").style.display = "block";
   }
 }
+function logout() {
+  // Очистить локальное хранилище или сессию
+  localStorage.clear();
+
+  // Перенаправить пользователя на страницу авторизации
+  window.location.href = "autorize.html";
+
+  document.getElementById("logoutButton").addEventListener("click", logout);
+}
